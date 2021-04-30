@@ -1,0 +1,20 @@
+{
+	"name": "coaching-website",
+	"version": "1.0.0",
+	"description": "coaching website for Oksana",
+	"main": "server.js",
+	"dependencies": {
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"path": "^0.12.7",
+		"pug": "^3.0.2"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "npm test",
+		"watch": "nodemon ./server.js --ignore public/",
+		"start": "npm run watch"
+	},
+	"author": "Aleksandra Ziteleva",
+	"license": "ISC"
+}
