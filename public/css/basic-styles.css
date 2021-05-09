@@ -1,3 +1,71 @@
 * {
 	font-family: 'Philosopher', sans-serif;
 }
+
+/* background-blue: #d6e8f6
+background-pink: #f7f2f9
+background-brown: #e4bc98;
+accent-blue: #67a6cf
+accent-brown: #b98667; */
+
+h2 {
+	font-size: 2rem;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 3.5rem;
+}
+
+.section_hero {
+	padding: 2rem;
+	height: 70vh;
+	background-image: url(./../img/img_hero.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.offer {
+	background-color: #f7f2f9;
+	opacity: 0.7;
+	text-align: center;
+	height: fit-content;
+}
+
+.offer h2 {
+	margin: 6rem 6rem 0rem 6rem;
+	padding-bottom: 1rem;
+}
+
+.offer h4 {
+	padding-bottom: 2rem;
+}
+
+.button_subscribe {
+	margin-bottom: 3rem;
+}
+
+/* section products */
+
+.section_products,
+.section_bio,
+.section_contacts {
+	background-color: #f7f2f9;
+}
+
+.product_item_list {
+	padding-bottom: 3rem;
+}
+
+.product_item {
+	border: #67a6cf 1px solid;
+	border-radius: 5%;
+	padding: 1rem;
+}
+
+/* section reviews */
+
+.section_reviews,
+.section_prices,
+.section_footer {
+	background-color: #d6e8f6;
+}

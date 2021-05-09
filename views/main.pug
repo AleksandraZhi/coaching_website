@@ -14,18 +14,47 @@ html(lang="en")
 
     body
         div(class="container-fluid")
-            nav(class="navbar navbar-expand-lg navbar-light bg-light")
-                div(class="container-fluid")
+            div(class="row section_navbar")
+                nav(class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #67a6cf")
                     a(class="navbar-brand" href="#") Оксана Тукане
                     button(class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
                         span(class="navbar-toggler-icon")
+                    button(type="button" class="btn btn-info button_subscribe")
+                        a(class="navbar-brand" href="#") Записаться
                     div(class="collapse navbar-collapse" id="navbarSupportedContent")
-                        ul(class="navbar-nav me-auto mb-2 mb-lg-0d")
+                        ul(class="navbar-nav ms-auto")
                             li(class="nav-item")
                                 a(class="nav-link" href="#") Программы
                             li(class="nav-item")
                                 a(class="nav-link" href="#") Цены
                             li(class="nav-item")
                                 a(class="nav-link" href="#") Контакты
-                            li(class="nav-item")
-                                a(class="nav-link active" href="#") Записаться
+
+            div(class="section_hero")
+                div(class="offer")
+                    h2 Хочешь быть режиссером своей жизни
+                    h4 Я знаю как и могу тебя научить
+                    button(type="button" class="btn btn-info button_subscribe") Записаться
+
+            div(class="row section_products")
+                h2 Со мной вы можете
+                include ./includes/section_products.pug
+
+            div(class="row section_reviews")
+                h2 Отзывы клиентов
+                include ./includes/section_reviews.pug
+                
+            div(class="row section_bio")
+                h2 Оксана Тукане
+                include ./includes/section_bio.pug
+
+            div(class="row section_prices")
+                h2 Цены на услуги
+                include ./includes/section_prices.pug
+
+            div(class="row section_contacts")
+                h2 Контакты
+                include ./includes/section_contacts.pug
+
+            div(class="row section_footer" style="background-color: #67a6cf")
+                include ./includes/section_footer.pug
