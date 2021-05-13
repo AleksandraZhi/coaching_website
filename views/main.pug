@@ -17,7 +17,7 @@ html(lang="en")
         div(class="container-fluid")
             div(class="row section_navbar")
                 nav(class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #67a6cf")
-                    a(class="navbar-brand" href="#") Оксана Тукане
+                    a(class="navbar-brand" href="#bio") Оксана Тукане
                     button(class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
                         span(class="navbar-toggler-icon")
                     button(type="button" class="btn btn-info button_subscribe")
@@ -25,11 +25,11 @@ html(lang="en")
                     div(class="collapse navbar-collapse" id="navbarSupportedContent")
                         ul(class="navbar-nav ms-auto")
                             li(class="nav-item")
-                                a(class="nav-link" href="#") Программы
+                                a(class="nav-link" href="#products") Программы
                             li(class="nav-item")
-                                a(class="nav-link" href="#") Цены
+                                a(class="nav-link" href="#prices") Цены
                             li(class="nav-item")
-                                a(class="nav-link" href="#") Контакты
+                                a(class="nav-link" href="#contacts") Контакты
 
             div(class="section_hero")
                 div(class="offer")
@@ -37,7 +37,7 @@ html(lang="en")
                     h4 Я знаю как и могу тебя научить
                     button(type="button" class="btn btn-info button_subscribe") Записаться
 
-            div(class="row section_products")
+            div(class="row section_products" id="products")
                 h2 Со мной вы можете
                 include ./includes/section_products.pug
 
@@ -45,15 +45,15 @@ html(lang="en")
                 h2 Отзывы клиентов
                 include ./includes/section_reviews.pug
                 
-            div(class="row section_bio")
+            div(class="row section_bio" id="bio")
                 h2 Оксана Тукане
                 include ./includes/section_bio.pug
 
-            div(class="row section_prices")
+            div(class="row section_prices" id="prices")
                 h2 Цены на услуги
                 include ./includes/section_prices.pug
 
-            div(class="row section_contacts")
+            div(class="row section_contacts" id="contacts")
                 h2 Контакты
                 include ./includes/section_contacts.pug
 

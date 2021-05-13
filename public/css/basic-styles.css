@@ -43,14 +43,25 @@ i {
 	margin: 1.5rem;
 }
 
+.section_hero,
+.bio_items-item {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.review_items img {
+	height: 10rem;
+	width: 10rem;
+	border-radius: 50%;
+	margin-bottom: 2rem;
+}
+
 /* section hero */
 
 .section_hero {
 	padding: 2rem;
 	height: 70vh;
 	background-image: url(./../img/img_hero.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 
@@ -77,12 +88,56 @@ i {
 	border: #67a6cf 1px solid;
 }
 
+/* section bio */
+
+.bio_items img {
+	content: url(./../img/oksana_photo.JPG);
+	height: 18rem;
+	border-radius: 50%;
+}
+
 /* section reviews */
 
 .section_reviews,
 .section_prices,
 .section_footer {
 	background-color: #d6e8f6;
+}
+
+.carousel-item {
+	padding-bottom: 5rem;
+}
+
+.review_items {
+	text-align: center;
+}
+
+.review_items p {
+	padding: 0 15rem;
+}
+
+.client-1 img {
+	content: url(./../img/client_1.jpg);
+}
+
+.client-2 img {
+	content: url(./../img/client_2.jpg);
+}
+
+.client-3 img {
+	content: url(./../img/client_3.jpeg);
+}
+
+.client-4 img {
+	content: url(./../img/client_4.jpg);
+}
+
+.client-5 img {
+	content: url(./../img/client_5.jpg);
+}
+
+.client-6 img {
+	content: url(./../img/client_6.jpg);
 }
 
 /* section prices */
@@ -103,7 +158,7 @@ i {
 /* section contacts */
 
 .contact_items-item h3 {
-	border: red 1px solid;
+	border: #e4bc98 1px solid;
 	border-radius: 1rem;
 	text-align: center;
 	padding: 1rem;
