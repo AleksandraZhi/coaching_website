@@ -18,6 +18,18 @@ app.set('views', path.join(__dirname, 'views'))
 // app.use(helmet())
 
 app.use(express.static(path.join(__dirname, 'public')))
+app.use(
+	'/fa',
+	express.static(
+		path.join(__dirname, 'node_modules/@fortawesome/fontawesome-free/css')
+	)
+)
+app.use(
+	'/webfonts',
+	express.static(
+		path.join(__dirname, 'node_modules/@fortawesome/fontawesome-free/webfonts')
+	)
+)
 
 app.use('/', indexRouter)
 
