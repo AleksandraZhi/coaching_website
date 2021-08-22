@@ -21,7 +21,7 @@ html(lang="en")
                     button(class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
                         span(class="navbar-toggler-icon")
                     button(type="button" class="btn btn-info button_subscribe")
-                        a(class="navbar-brand" href="#") Записаться
+                        a(class="navbar-brand" href="#payments") Записаться
                     div(class="collapse navbar-collapse" id="navbarSupportedContent")
                         ul(class="navbar-nav ms-auto")
                             li(class="nav-item")
@@ -29,14 +29,15 @@ html(lang="en")
                             li(class="nav-item")
                                 a(class="nav-link" href="#products") Программы
                             li(class="nav-item")
-                                a(class="nav-link" href="#prices") Цены
+                                a(class="nav-link" href="#payments") Цены
                             li(class="nav-item")
                                 a(class="nav-link" href="#contacts") Контакты
 
             div(class="row section_hero")
                 div(class="offer" style="margin-top: 20vh")
                     h2 ТЫ. УСПЕХ. СЕЙЧАС.
-                    button(type="button" class="btn btn-info button_subscribe") Начать
+                    button(type="button" class="btn btn-info button_subscribe") 
+                        a(href="#payments" class="button_subscribe") Начать
 
             div(class="row section_products" id="products")
                 h2(class="fs-1") Ты. Успех. Сейчас.
@@ -56,9 +57,9 @@ html(lang="en")
             //-     h2 Цены на услуги
             //-     include ./includes/section_prices.pug
 
-            div(class="row section_contacts" id="contacts")
-                h2(class="fs-1") Контакты
-                include ./includes/section_contacts.pug
+            div(class="row section_payments" id="payments")
+                h2(class="fs-1") Записаться на сессию
+                include ./includes/section_payments.pug
 
-            div(class="row section_footer" style="background-color: white")
+            div(class="row section_footer" id="contacts" style="background-color: white")
                 include ./includes/section_footer.pug

@@ -23,7 +23,7 @@ h2 {
 }
 
 .section_reviews,
-.section_contacts,
+.section_payments,
 .section_prices {
 	background-color: var(--background-pink);
 }
@@ -90,6 +90,10 @@ i {
 	height: 10vh;
 	width: 17vw;
 	font-size: 2.5rem;
+}
+
+.section_hero a {
+	text-decoration: none;
 }
 
 /* SECTION PRODUCTS */
@@ -224,6 +228,30 @@ i {
 	margin-bottom: 2rem;
 }
 
+/* SECTION PAYMENTS */
+
+.hidden {
+	display: none;
+}
+
+#smart-button-container {
+	text-align: center;
+}
+
+.section_payments p {
+	font-size: 0.7rem;
+	text-align: justify;
+	text-align: center;
+}
+
+.section_payments p:first-child {
+	padding-top: 2rem;
+}
+
+.section_payments p:last-child {
+	padding-bottom: 2rem;
+}
+
 /* SECTION FOOTER */
 
 .section_footer {
@@ -232,4 +260,8 @@ i {
 
 .copyright {
 	text-align: right;
+}
+
+.section_footer i {
+	padding-left: 2rem;
 }
