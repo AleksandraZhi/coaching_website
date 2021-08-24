@@ -7,6 +7,10 @@
 	--accent-brown: #b98667;
 }
 
+/* .hidden {
+	display: none !important;
+} */
+
 h2 {
 	text-transform: uppercase;
 	text-align: center;
@@ -78,7 +82,7 @@ i {
 .offer h2 {
 	padding-bottom: 1rem;
 	color: white;
-	font-size: 10rem;
+	font-size: 25vh;
 	text-shadow: 1px 5px black;
 }
 
@@ -89,11 +93,24 @@ i {
 .section_hero button {
 	height: 10vh;
 	width: 17vw;
-	font-size: 2.5rem;
+	font-size: 6vh;
+	font-size: 3vw;
 }
 
 .section_hero a {
 	text-decoration: none;
+}
+
+@media only screen and (min-width: 566px) and (max-width: 994px) {
+	.section_hero h2 {
+		font-size: 17vh;
+	}
+}
+
+@media only screen and (max-width: 565px) {
+	.section_hero h2 {
+		font-size: 15vh;
+	}
 }
 
 /* SECTION PRODUCTS */
@@ -116,12 +133,14 @@ i {
 	text-align: center;
 }
 
-.product-title {
-	height: 6rem;
-}
-
 .product-icon {
 	height: 2rem;
+}
+
+.product_items h4 {
+	margin-top: 4vh;
+	margin-bottom: 2vh;
+	text-align: center;
 }
 
 /* SECTION REVIEWS */
@@ -230,12 +249,17 @@ i {
 
 /* SECTION PAYMENTS */
 
-.hidden {
-	display: none;
-}
-
 #smart-button-container {
 	text-align: center;
+}
+
+.buttons_payment {
+	text-align: center;
+	padding-bottom: 4rem;
+}
+
+.buttons_payment .btn {
+	margin: 2rem;
 }
 
 .section_payments p {
@@ -256,6 +280,11 @@ i {
 
 .section_footer {
 	padding: 1rem;
+}
+
+.section_footer p {
+	color: var(--background-brown);
+	font-size: 0.75rem;
 }
 
 .copyright {
