@@ -75,6 +75,13 @@ footer {
 
 /* SECTION NAVIGATION */
 
+.sticky-navigation {
+	position: fixed;
+	width: 100vw;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
 .section_navigation {
 	display: flex;
 	flex-direction: column;
