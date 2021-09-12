@@ -1,0 +1,232 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Philosopher';
+}
+
+h2 {
+	color: white;
+	font-size: 7vh;
+	text-transform: uppercase;
+}
+
+button {
+	border: 1px solid white;
+	border-radius: 0.3rem;
+	width: 9vw;
+	height: 7vh;
+	background-color: transparent;
+	color: white;
+	font-size: 3vh;
+	text-transform: uppercase;
+}
+
+.section_sessions button {
+	border: black solid 1px;
+	color: black;
+}
+
+h2,
+button {
+	margin: 4vh 4vw;
+}
+
+.section_sessions p {
+	margin-right: 4vw;
+	padding-left: 50vw;
+}
+
+.section_coaching p {
+	margin-left: 4vw;
+	padding-right: 50vw;
+}
+
+.section_navigation-hero,
+.section_coaching,
+.section_sessions,
+.section_bio,
+.section_reviews,
+footer {
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	width: 98.9vw;
+	height: 80vh;
+}
+
+.section_coaching,
+.section_sessions,
+.section_bio,
+.section_reviews {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.section_sessions,
+.section_reviews {
+	align-items: flex-end;
+}
+
+.section_coaching div,
+.section_reviews div {
+	vertical-align: middle;
+}
+
+/* SECTION NAVIGATION */
+
+.sticky-navigation {
+	position: fixed;
+	width: 100vw;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.section_navigation {
+	display: flex;
+	flex-direction: column;
+	width: 98.9vw;
+	align-items: center;
+}
+
+#logo {
+	font-family: 'Allison';
+	font-size: 10vh;
+	align-content: center;
+}
+
+#name {
+	text-align: center;
+	padding-bottom: 2vh;
+}
+
+.section_navigation-navbar {
+	padding: 2vh;
+}
+
+.section_navigation-navbar ul {
+	display: inline-flex;
+	list-style: none;
+	text-transform: uppercase;
+	font-size: 2.5vh;
+}
+
+.section_navigation-navbar li {
+	padding: 0 1.5vw;
+}
+
+.section_navigation-navbar a {
+	text-decoration: none;
+	color: black;
+}
+
+.section_navigation-hero {
+	width: 98.9vw;
+	height: 80vh;
+	background-image: url(../img/new-look-hero-background.jpg);
+}
+
+/* SECTION ABOUT COACHING */
+
+.section_coaching {
+	background-image: linear-gradient(
+			to left,
+			rgba(0, 0, 0, 0.3),
+			rgba(0, 0, 0, 1)
+		),
+		url(../img/new-look-oksana_meditaion.jpg);
+}
+
+.section_coaching p {
+	color: white;
+}
+
+/* SECTION SESSION TYPES  */
+
+.section_sessions {
+	background-image: linear-gradient(
+			to right,
+			rgba(250, 250, 250, 0.1),
+			rgba(250, 250, 250, 1)
+		),
+		url(../img/new-look-oksana-dover.jpg);
+}
+
+.section_sessions h2 {
+	color: black;
+}
+
+/* SECTION ABOUT ME */
+
+.section_bio {
+	background-image: linear-gradient(
+			to left,
+			rgba(0, 0, 0, 0.3),
+			rgba(0, 0, 0, 1)
+		),
+		url(../img/new-look-oksana_parrot.jpg);
+}
+
+/* SECTION REVIEWS  */
+
+.section_reviews {
+	background-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.3),
+			rgba(0, 0, 0, 1)
+		),
+		url(../img/new-look-oksana_photographer.jpg);
+}
+
+/* SECTION FOOTER */
+
+footer {
+	display: flex;
+	background-color: rgb(0, 0, 0);
+	color: white;
+	height: 30vh;
+}
+
+footer div {
+	width: 98vw;
+	padding: 4vw 4vh;
+}
+
+footer p {
+	padding-bottom: 2vh;
+}
+
+footer .footer-right p,
+footer .footer-right {
+	text-align: right;
+}
+
+footer i {
+	color: white;
+	padding-left: 2vw;
+	font-size: 4vh;
+}
+
+/* PAYMENTS PAGE*/
+
+.paypal-inner-container {
+	background-image: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.3),
+			rgba(0, 0, 0, 0.7)
+		),
+		url('../img/new-look-hero-background.jpg');
+	background-size: cover;
+	padding: 10vh;
+}
+
+.paypal-inner-container p {
+	color: white;
+	padding: 4vh;
+	font-size: 2rem;
+}
+
+.paypal-buttons-container {
+	padding-top: 5vh;
+	text-align: center;
+}
