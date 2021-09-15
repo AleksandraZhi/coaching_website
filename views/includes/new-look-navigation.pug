@@ -1,18 +1,20 @@
+- const [title, ...navigationItems] = fileContents.split('\n')
+
 div(class="section_navigation")
     div(class="section_navigation-logo")
         p(id="logo") Oksana Tukane
-        p(id="name") коуч (ICF) | психолог
+        p(id="name") #{title}
     div(class="section_navigation-navbar")
         ul
             li 
-                a(href="/RU/#") Главная
+                a(href="/RU/#") #{navigationItems[0]}
             li 
-                a(href="/RU/#sessions") Возможности
+                a(href="/RU/#about-couching") #{navigationItems[1]}
             li 
-                a(href="/RU/#about-couching") О коучинге
+                a(href="/RU/#sessions") #{navigationItems[2]}
             li 
-                a(href="/RU/#bio") Обо мне 
+                a(href="/RU/#bio") #{navigationItems[3]}
             li 
-                a(href="#footer") Контакты
+                a(href="#footer") #{navigationItems[4]}
             li 
-                a(href="#") Запись 
+                a(href="#") #{navigationItems[5]} 
