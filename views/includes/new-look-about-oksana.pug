@@ -1,3 +1,6 @@
+- const [...fileText] = aboutCoachContents.split('\n')
+
 div(id="bio" class="section_bio")
-    h2 Обо мне
-    button(class="button") Читать
+    h2 #{fileText[0]}
+    p #{fileText[1]}
+    button(class="button") #{fileText[2]}

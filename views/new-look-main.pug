@@ -14,11 +14,14 @@ html(lang="en")
     body
         include ./includes/new-look-navigation.pug
         include ./includes/new-look-hero.pug
-        include ./includes/new-look-about-couching.pug
+        //- include ./includes/new-look-about-couching.pug
         include ./includes/new-look-session-types.pug
         include ./includes/new-look-about-oksana.pug
-        include ./includes/new-look-reviews.pug
+        if reviewsContents 
+            include ./includes/new-look-reviews.pug
         include ./includes/new-look-footer.pug
+
+        - console.log('A PLACEHOLDER')
 
     script 
         include ./includes/js/section_navigation.js

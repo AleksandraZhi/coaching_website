@@ -1,7 +1,12 @@
+- const [...wholeText] = possibilitiesContents.split('\n')
+- let i = 1
+- const lastElement = wholeText.length - 1
+
 div(id="sessions" class="section_sessions")
-    h2 Возможности 
-    p 
-        | С коучем можно прорабатывать массу различных тем, и при этом экологично, мягко, без болезненных
-        | воспоминаний. Со своими клиентами мы успешно прорабатываем отношения, работу, взаимоотношения с детьми и
-        | многое другое.
-    button(class="button") Читать
+    h2 #{wholeText[0]}
+
+    while i <= wholeText.length - 2
+        p #{wholeText[i]}
+        - i++
+
+    button(class="button") #{wholeText[lastElement]}

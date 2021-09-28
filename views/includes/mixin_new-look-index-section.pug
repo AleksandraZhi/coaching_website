@@ -1,0 +1,12 @@
+mixin section(idName, className, wholeText)
+    - let i = 1
+    - const lastElement = wholeText.length - 1
+
+    div(id=idName class=className)
+        h2 #{wholeText[0]}
+
+        while i <= wholeText.length - 2
+            p #{wholeText[i]}
+            - i++
+
+        button(class="button") #{wholeText[lastElement]}

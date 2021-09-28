@@ -1,5 +1,15 @@
+// first element of the array is about Coaching section
+- const [...thisSectionText] = sectionsContents.split('\n')
+- let i = 0
+- let j = 1
+- const lastElement = sectionsContents[0].length - 1
+
 div(id="about-couching" class="section_coaching")
-    h2 О коучинге
-    p Здесь какой-то вводный текст. В двух словах о коучинге и его мягких и ненавязчивых методах работы
-    button(class="button") Читать
+    h2 #{sectionsContents[0,0]}
+
+    while i <= sectionsContents[0,i].length - 2
+        p #{sectionsContents[0,i]}
+        - i++
+
+    button(class="button") #{sectionsContents[0,lastElement]}
     
